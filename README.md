@@ -1,5 +1,5 @@
 # PterodactylSSO
-Used to maintain SSO for ANVAR's Pterodactyl Panel
+Forked from https://github.com/CodeFusion/PterodactylSSO
 
 Dependencies Required:
 NPM
