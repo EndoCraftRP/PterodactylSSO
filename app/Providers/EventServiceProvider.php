@@ -34,7 +34,11 @@ class EventServiceProvider extends ServiceProvider
 
     protected $subscribe = [
         AuthenticationListener::class,
+        RevocationListener::class,
+        TwoFactorListener::class,
     ];
+
+    protected static $shouldDiscoverEvents = false;
 
     /**
      * Boots the service provider and registers model event listeners.
@@ -51,6 +55,6 @@ class EventServiceProvider extends ServiceProvider
 
     public function shouldDiscoverEvents()
     {
-        return true;
+        return false;
     }
 }
